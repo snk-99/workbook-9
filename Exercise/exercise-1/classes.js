@@ -6,24 +6,18 @@ class Employee {
         this.jobTitle = jobTitle;
         this.payRate = payRate;
     }
-    getFullName() {
-        return this.firstName + " " + this.lastName;
-    }
-    
-    getPayRate() {
-        return this.payRate
-    }
 
     promote(newJobTitle, newPayRate) {
         this.jobTitle = newJobTitle;
         this.payRate = newPayRate;
     }
+
     getIntro() {
         return `Hi, my name is ${this.firstName} ${this.lastName}, I'm a ${this.jobTitle}.`
     }
 }
 
-let employee = new Employee(
+let employee1 = new Employee(
     1,
     "Samuel",
     "Kahura",
@@ -31,9 +25,17 @@ let employee = new Employee(
     "3_000_000"
 )
 
-console.log(employee.getFullName());
-console.log(employee.getPayRate());
+let employee2 = new Employee(
+    2,
+    "Bedan",
+    "Kahura",
+    "petroleum engineer",
+    "5_000_000"
+)
 
 
-let intro = employee.getIntro();
-console.log(intro)
+let employee1Intro = employee1.getIntro();
+console.log(employee1Intro)
+
+let employee2Intro = employee2.getIntro();
+console.log(employee2Intro)
