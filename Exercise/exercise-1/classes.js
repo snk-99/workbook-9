@@ -21,18 +21,27 @@ let employee1 = new Employee(
     1,
     "Samuel",
     "Kahura",
-    "Netflix Sr. Software Dev",
-    "3_000_000"
+    "Netflix Software Dev",
+    1_000_000
+
 )
+
+employee1.promote("Netflix Sr. Software Dev", 3_000_000);
+console.log(`Job title: ${employee1.jobTitle}`);
+console.log(`Pay rate: $${employee1.payRate}`);
+
 
 let employee2 = new Employee(
     2,
     "Bedan",
     "Kahura",
     "petroleum engineer",
-    "5_000_000"
+    3_000_000
 )
 
+employee2.promote("Sr.petroleum engineer", 7_000_000)
+console.log(`Job title: ${employee2.jobTitle}`)
+console.log(`Pay rate: $${employee2.payRate}`)
 
 let employee1Intro = employee1.getIntro();
 console.log(employee1Intro)
